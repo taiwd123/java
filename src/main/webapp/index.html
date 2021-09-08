@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./Style/main.css">
+</head>
+<body>
+<h1 class="header">Join our email list</h1>
+<p class="desc">To join our email list, enter your name and email address below</p>
+<form action="hello-servlet" method="POST">
+    <input type="hidden" name="action" value="add">
+    <div>
+        <label>Email: </label>
+        <input type="email" name="email" required>
+    </div>
+    <div>
+        <label>First Name: </label>
+        <input type="text" name="firstName" required>
+    </div>
+    <div>
+        <label>Last Name: </label>
+        <input type="text" name="lastName" required>
+    </div>
+    <div>
+        <input type="submit" value="Join Now">
+    </div>
+</form>
+</body>
+</html>
